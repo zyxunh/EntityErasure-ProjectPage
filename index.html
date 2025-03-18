@@ -5,7 +5,7 @@
   <meta name="description" content="multimodel chatbot">
   <meta name="keywords" content="multimodal, Stable Diffusion, AIGC">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DreamOmni: Unified Image Generation and Editing</title>
+  <title>EntityErasure: Erasing Entity Cleanly via Amodal Entity Segmentation and Completion </title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -46,45 +46,38 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h2 class="title is-2 publication-title"><span class="is-size-2">DreamOmni: Unified Image Generation and Editing </span></h2>
+            <h2 class="title is-2 publication-title"><span class="is-size-2">EntityErasure: Erasing Entity Cleanly via Amodal Entity Segmentation and Completion </span></h2>
             <!--<h5 class="subtitle is-5 publication-awards"></h5>-->
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="https://github.com/Zj-BinXia" style="color:#f6cd46;font-weight:normal;">Bin Xia<sup><b style="color:#f6cd46; font-weight:normal">&#x25B6 </b></sup></a>, 
+                <a >Yixing Zhu<sup>1</sup></a>, 
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=8OijNgkAAAAJ&hl=zh-CN&oi=ao" style="color:#f6cd46;font-weight:normal;">Yuechen Zhang<sup><b style="color:#f6cd46; font-weight:normal">&#x25B6 </b></sup></a>, 
+                <a href="https://scholar.google.com/citations?user=qH0rU44AAAAJ&hl=en" style="color:#f6cd46;font-weight:normal;">Qing Zhang<sup>1,4*</sup></a>, 
               </span>
               <span class="author-block">
-                <a href="" style="color:#f6cd46;font-weight:normal;">Jingyao Li<sup><b style="color:#f6cd46; font-weight:normal">&#x25B6 </b></sup></a>, 
+                <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=NfFTKfYAAAAJ" style="color:#f6cd46;font-weight:normal;">Yitong Wang<sup>2</sup></a>, 
               </span>
               <span class="author-block">
-                <a href="" style="color:#f6cd46;font-weight:normal;">Chengyao Wang<sup><b style="color:#f6cd46; font-weight:normal">&#x25B6 </b></sup></a>, 
+                <a href="https://scholar.google.com.hk/citations?user=jVlU_oQAAAAJ&hl=zh-CN&oi=ao" style="color:#f6cd46;font-weight:normal;">Yongwei Nie<sup>3</sup></a>, 
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=NfFTKfYAAAAJ" style="color:#59f200;font-weight:normal;">Yitong Wang<sup><b style="color:#59f200; font-weight:normal">&#x25B6 </b></sup></a>,
-              </span>
-              <span class="author-block">
-                <a href="" style="color:#59f200;font-weight:normal;">Xinglong Wu<sup><b style="color:#59f200; font-weight:normal">&#x25B6 </b></sup></a>,
-              </span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=tGneTm4AAAAJ&hl=zh-CN&oi=ao" style="color:#f6cd46;font-weight:normal;">Bei Yu<sup><b style="color:#f6cd46; font-weight:normal">&#x25B6 </b></sup></a>
-              </span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=XPAkzTEAAAAJ&hl=en" style="color:#f44336;font-weight:normal;">Jiaya Jia<sup><b style="color:#f44336; font-weight:normal">&#x25B6 </b></sup></a>
+                <a href="https://scholar.google.com/citations?user=AwqDDGoAAAAJ&hl=en" style="color:#59f200;font-weight:normal;">Wei-Shi Zheng<sup>1,4</sup></a>,
               </span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><b style="color:#f6cd46; font-weight:normal">&#x25B6 </b> The Chinese University of Hong Kong</b></span>
-              <span class="author-block"><b style="color:#59f200; font-weight:normal">&#x25B6 </b> ByteDance Inc</span>
-              <span class="author-block"><b style="color:#f44336; font-weight:normal">&#x25B6 </b> The Hong Kong University of Science and Technology</b></span>
+              <span class="author-block"><sup>1</sup>School of Computer Science and Engineering, Sun Yat-sen University, China</b></span>
+              <span class="author-block"><sup>2</sup>ByteDance Inc</b></span>
+              <span class="author-block"><sup>3</sup>South China University of Technology, China</b></span>
+              <span class="author-block"><sup>4</sup>Key Laboratory of Machine Intelligence and Advanced Computing, Ministry of Education, China</b></span>
+              <span class="author-block"><sup>*</sup>Corresponding author</b></span>
             </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2412.17098" target="_blank" 
+                  <a href="" target="_blank" 
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -145,7 +138,7 @@
         <h2 class="title is-3"> Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Currently, the success of large language models (LLMs) illustrates that a unified multitasking approach can significantly enhance model usability, streamline deployment, and foster synergistic benefits across different tasks. However, in computer vision, while text-to-image (T2I) models have significantly improved generation quality through scaling up, their framework design did not initially consider how to unify with downstream tasks, such as various types of editing. To address this, we introduce DreamOmni, a unified model for image generation and editing. We begin by analyzing existing frameworks and the requirements of downstream tasks, proposing a unified framework that integrates both T2I models and various editing tasks. Furthermore, another key challenge is the efficient creation of high-quality editing data, particularly for instruction-based and drag-based editing. To this end, we develop a synthetic data pipeline using sticker-like elements to synthesize accurate, high-quality datasets efficiently, which enables editing data scaling up for unified model training.  For training, DreamOmni jointly trains T2I generation and downstream tasks. T2I training enhances the model's understanding of specific concepts and improves generation quality, while editing training helps the model grasp the nuances of the editing task. This collaboration significantly boosts editing performance. Extensive experiments confirm the effectiveness of DreamOmni.
+            This paper presents EntityErasure, a novel diffusion-based method that can effectively erase entity without inducing unwanted sundries. To this end, we propose to address this problem by dividing it into amodal entity segmentation and completion, such that the region to inpaint takes only entities in the non-inpainting area as reference, avoiding the possibility to generate unpredictable sundries. Moreover, we propose two novel metrics, for assessing the quality of object erasure based on entity segmentation, which are shown be more effective than existing metrics. Experimental results demonstrate that our approach outperforms other state-of-the-art object erasure methods.
           </p>
         </div>   
       </div>
@@ -153,8 +146,7 @@
     <!--/ Abstract. -->
 </section>
 
-<section class="section"  style="background-color:#efeff081">
-  <!-- Results. -->
+<!-- <section class="section"  style="background-color:#efeff081">
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
       <h2 class="title is-3"><img id="painting_icon" width="2.5%" src="static/icon/icon1.png"> The gallery of DreamOmni</h2>
@@ -165,19 +157,20 @@
   <p>
     </div>    
 
-</section>
+</section> -->
 
 <section class="section"  style="background-color:#efeff081">
-  <!-- Results. -->
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
-      <h2 class="title is-3"><img id="painting_icon" width="2.5%" src="static/icon/icon2.png"> Method</h2>
+      <h2 class="title is-3"> Method</h2>
     </div>
   </div>
   <div style="text-align: center;"></p>
-    <img id="teaser" width="60%" src="static/image/method.png"> 
-  <p>
-    </div>    
+    <img id="method" width="40%" src="static/image/pipeline.png"> 
+  </p>
+  Overview
+</p>
+ </div>    
 
 </section>
 
@@ -185,7 +178,7 @@
   <!-- Results. -->
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
-      <h2 class="title is-3"><img id="painting_icon" width="2.5%" src="static/icon/icon4.png"> Performance</h2>
+      <h2 class="title is-3"> Performance</h2>
     </div>
   </div>
 
@@ -199,77 +192,16 @@
     <div class="column is-full-width">
       
       <div>
-        <h2 class="title is-4"> <span style="font-size: 100%;"> Visual comparison on T2I</span></h2>
+        <h2 class="title is-4"> <span style="font-size: 100%;"> Comparison with other methods</span></h2>
         <div style="text-align: center;">
           <p style="font-family:Times New Roman"><b> </b></p>
         </div>
       
         <div style="text-align: center;">
-          <img src="static/image/t2i.png" style="width:100%">
+          <img src="static/image/compare.png" style="width:100%">
         </div>
       </div>
       <br>
-
-      <div>
-        <h2 class="title is-4"> <span style="font-size: 100%;"> Visual comparison on inpainting</span></h2>
-        <div style="text-align: center;">
-          <p style="font-family:Times New Roman"><b> </b></p>
-        </div>
-      
-        <div style="text-align: center;">
-          <img src="static/image/inpainting.png" style="width:100%">
-        </div>
-      </div>
-      <br>
-
-      <div>
-        <h2 class="title is-4"> <span style="font-size: 100%;"> Visual comparison on image-conditioned generation</span></h2>
-        <div style="text-align: center;">
-          <p style="font-family:Times New Roman"><b> </b></p>
-        </div>
-      
-        <div style="text-align: center;">
-          <img src="static/image/controlnet.png" style="width:100%">
-        </div>
-      </div>
-      <br>
-
-      <div>
-        <h2 class="title is-4"> <span style="font-size: 100%;"> Visual comparison on subject-driven generation</span></h2>
-        <div style="text-align: center;">
-          <p style="font-family:Times New Roman"><b> </b></p>
-        </div>
-      
-        <div style="text-align: center;">
-          <img src="static/image/subject-driven.png" style="width:100%">
-        </div>
-      </div>
-      <br>
-
-      <div>
-        <h2 class="title is-4"> <span style="font-size: 100%;"> Visual comparison on instruction-based editing</span></h2>
-        <div style="text-align: center;">
-          <p style="font-family:Times New Roman"><b> </b></p>
-        </div>
-      
-        <div style="text-align: center;">
-          <img src="static/image/ins-edit.png" style="width:100%">
-        </div>
-      </div>
-      <br>
-
-      <div>
-        <h2 class="title is-4"> <span style="font-size: 100%;"> Visual comparison on drag editing</span></h2>
-        <div style="text-align: center;">
-          <p style="font-family:Times New Roman"><b> </b></p>
-        </div>
-      
-        <div style="text-align: center;">
-          <img src="static/image/drag.png" style="width:100%">
-        </div>
-      </div>
-      <br>
-
     </div>
   </div>
 </div>
